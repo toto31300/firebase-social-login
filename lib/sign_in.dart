@@ -25,11 +25,11 @@ Future<String> signInWithGoogle() async {
     // Checking if email and name is null
     assert(user.email != null);
     assert(user.displayName != null);
-    //assert(user.photoURL != null);
+    assert(user.photoURL != null);
 
     name = user.displayName;
     email = user.email;
-    //imageUrl = user.photoURL;
+    imageUrl = user.photoURL;
 
     // Only taking the first part of the name, i.e., First Name
     if (name.contains(" ")) {
