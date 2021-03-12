@@ -1,7 +1,11 @@
 library social_login;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:flutter/cupertino.dart';
+import 'package:social_login/login_page.dart';
+
+class SocialLogin {
+  /// Returns [LoginPage].
+  Widget auth(Widget nextPage){
+    return LoginPage(nextPage);
+  }
 }
